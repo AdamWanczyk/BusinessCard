@@ -18,7 +18,6 @@ body {
     margin-right: auto;
     margin-top: 300px;
     border-radius: 16px;
-
 }
 
 .about-me {
@@ -31,4 +30,21 @@ body {
     right: 150px;
     top: -750px;
     border-radius: 16px;
+    display: flex;
 }
+
+    .img{
+        width: 40%;
+        height: 100%;
+        border-bottom-left-radius: 16px;
+        border-top-left-radius: 16px;
+        background: url(foto1.jpg);
+    }
+
+    .about-me-card{
+        width: 60%;
+        height: 100%;
+        border-bottom-right-radius: 16px;
+        border-top-right-radius: 16px;
+    }
+
