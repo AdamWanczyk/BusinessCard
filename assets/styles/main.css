@@ -1,3 +1,10 @@
+:root{
+    font-size: 16px;
+    --div_section-background-color: #9396D4;
+    --div-background-color: #ffffff;
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -11,8 +18,8 @@ body {
 
 
 .ai {
-    background: #9396D4;
-    width: 1000px;
+    background-color: var(--div_section-background-color);
+    width: 50%;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -21,8 +28,8 @@ body {
 }
 
 .about-me {
-    background: #ffffff;
-    width: 1000px;
+    background-color: var(--div-background-color);
+    width: 50%;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -33,26 +40,26 @@ body {
     display: flex;
 }
 
-    .img{
-        width: 40%;
-        height: 100%;
-        border-bottom-left-radius: 16px;
-        border-top-left-radius: 16px;
-        background: url(foto1.jpg);
-    }
+.main_photo {
+    width: 40%;
+    height: 100%;
+    border-bottom-left-radius: 16px;
+    border-top-left-radius: 16px;
+    background: no-repeat url(/BusinessCard/assets/images/foto1.jpg);
+}
 
-    .about-me-card{
-        width: 60%;
-        height: 100%;
-        border-bottom-right-radius: 16px;
-        border-top-right-radius: 16px;
-    }
+.about-me-card {
+    width: 60%;
+    height: 100%;
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
+}
 
 h1{
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 100px;
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 p{
