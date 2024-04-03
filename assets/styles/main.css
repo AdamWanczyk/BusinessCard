@@ -1,0 +1,70 @@
+:root{
+    font-size: 16px;
+    --div_section-background-color: #9396D4;
+    --div-background-color: #ffffff;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #eee7dc;
+}
+
+
+.ai {
+    background-color: var(--div_section-background-color);
+    width: 50%;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+    border-radius: 16px;
+}
+
+.about_me {
+    background-color: var(--div-background-color);
+    width: 50%;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    right: 150px;
+    top: -750px;
+    border-radius: 16px;
+    display: flex;
+}
+
+.about_me_photo {
+    width: 40%;
+    height: 100%;
+    border-bottom-left-radius: 16px;
+    border-top-left-radius: 16px;
+    background: no-repeat url(../images/foto1.jpg);
+}
+
+.about_me_card {
+    width: 60%;
+    height: 100%;
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+h1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    font-size: 2rem;
+}
+
+p{
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-indent: 20px;
+}
