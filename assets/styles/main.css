@@ -25,29 +25,24 @@ nav {
     margin-right: auto;
     border-radius: 16px;
     padding: 10px 0;
-    height: 50px;
+    box-shadow: 10px 10px 20px var(--div_section-background-color);
 
 }
 
 ol {
-    padding: 0;
-    margin: 0;
     list-style: none;
     font-size: 1.1rem;
     line-height: 2rem;
-    display: inline-block;
+    display: flex;
 }
 
 ol a {
     text-decoration: none;
     color: black;
-    display: block;
 }
 
 ol li {
-    float: left;
-    width: 150px;
-    height: 30px;
+    flex: 1;
     border-right: 1px solid black;
 }
 
@@ -61,9 +56,25 @@ ol li:hover{
 
 }
 
-ol li:hover > a {
+ol li:hover a {
     color: var(--div_section-background-color);
     font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+    ol {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    ol li {
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+
+    ol li:last-child {
+    border-bottom: none;
+    }
 }
 
 .ai {
