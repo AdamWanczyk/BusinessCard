@@ -27,7 +27,7 @@ body {
     border-radius: 16px;
 }
 
-.about-me {
+.about_me {
     background-color: var(--div-background-color);
     width: 50%;
     height: 600px;
@@ -40,15 +40,15 @@ body {
     display: flex;
 }
 
-.main_photo {
+.about_me_photo {
     width: 40%;
     height: 100%;
     border-bottom-left-radius: 16px;
     border-top-left-radius: 16px;
-    background: no-repeat url(/BusinessCard/assets/images/foto1.jpg);
+    background: no-repeat url(../images/foto1.jpg);
 }
 
-.about-me-card {
+.about_me_card {
     width: 60%;
     height: 100%;
     border-bottom-right-radius: 16px;
