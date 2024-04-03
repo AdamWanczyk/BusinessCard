@@ -16,6 +16,55 @@ body {
     background: #eee7dc;
 }
 
+nav {
+    background-color: var(--div-background-color);
+    text-align: center;
+    margin-top: 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 16px;
+    padding: 10px 0;
+    height: 50px;
+
+}
+
+ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    display: inline-block;
+}
+
+ol a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+ol li {
+    float: left;
+    width: 150px;
+    height: 30px;
+    border-right: 1px solid black;
+}
+
+ol li:last-child {
+    border-right: none;
+}
+
+ol li:hover{
+    text-decoration: underline;
+    text-decoration-color: var(--div_section-background-color);
+
+}
+
+ol li:hover > a {
+    color: var(--div_section-background-color);
+    font-weight: bold;
+}
 
 .ai {
     background-color: var(--div_section-background-color);
@@ -23,7 +72,7 @@ body {
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 300px;
+    margin-top: 200px;
     border-radius: 16px;
 }
 
