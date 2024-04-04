@@ -16,7 +16,7 @@ body {
     background: #eee7dc;
 }
 
-nav {
+.header_menu {
     background-color: var(--div-background-color);
     text-align: center;
     margin-top: 50px;
@@ -28,56 +28,56 @@ nav {
     box-shadow: 10px 10px 20px var(--div_section-background-color);
 }
 
-ol {
+.header_menu ol {
     list-style: none;
     font-size: 1.1rem;
     line-height: 2rem;
     display: flex;
 }
 
-ol a {
+.header_menu ol a {
     text-decoration: none;
     color: black;
 }
 
-ol li {
+.header_menu ol li {
     flex: 1;
     border-right: 1px solid black;
 }
 
-ol li:last-child {
+.header_menu ol li:last-child {
     border-right: none;
 }
 
-ol li:hover{
+.header_menu ol li:hover{
     text-decoration: underline;
     text-decoration-color: var(--div_section-background-color);
 
 }
 
-ol li:hover a {
+.header_menu ol li:hover a {
     color: var(--div_section-background-color);
     font-weight: bold;
 }
 
-a.active{
+.header_menu a.active{
     text-decoration: underline;
     color: var(--div_section-background-color);
     font-weight: bold;
 }
 
 @media screen and (max-width: 1000px) {
-    ol {
+    .header_menu ol {
         flex-direction: column;
         width: 100%;
     }
 
-    ol li {
+    .header_menu ol li {
         border-right: none;
         border-bottom: 1px solid black;
     }
 
-    ol li:last-child {
+    .header_menu ol li:last-child {
     border-bottom: none;
     }
 }
