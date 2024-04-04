@@ -16,6 +16,7 @@ body {
     background: #eee7dc;
 }
 
+
 .header_menu {
     background-color: var(--div-background-color);
     text-align: center;
@@ -81,6 +82,7 @@ body {
     border-bottom: none;
     }
 }
+
 
 .ai {
     background-color: var(--div_section-background-color);
