@@ -2,6 +2,7 @@
     font-size: 16px;
     --div_section-background-color: #9396D4;
     --div-background-color: #ffffff;
+    --button-background-color: #e33bbe;
 }
 
 
@@ -113,6 +114,7 @@ body {
     border-bottom-left-radius: 16px;
     border-top-left-radius: 16px;
     background: no-repeat url(../images/foto1.jpg);
+    background-size: cover;
 }
 
 .about_me_card {
@@ -120,6 +122,8 @@ body {
     height: 100%;
     border-bottom-right-radius: 16px;
     border-top-right-radius: 16px;
+    display: flex;
+    flex-direction: column;
 }
 
 h1{
@@ -136,3 +140,19 @@ p{
     text-indent: 20px;
 }
 
+.cv_button {
+    background-color: var(--button-background-color);
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    letter-spacing: 0.1rem;
+    border: none;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.cv_button:hover{
+    background-color: deeppink;
+}
