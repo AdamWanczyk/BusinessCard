@@ -156,3 +156,106 @@ p{
 .cv_button:hover{
     background-color: deeppink;
 }
+
+.social_media{
+    width: 90%;
+    height: 15%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.fb
+{
+    width: 20%;
+    height: 100%;
+    float:left;
+    font-size: 60px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.fb:hover
+{
+    background-color: #4668b3;
+}
+
+.yt
+{
+    width:20%;
+    height: 100%;
+    float:left;
+    font-size: 60px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.yt:hover
+{
+    background-color: #d94348;
+}
+
+.tw
+{
+    width: 20%;
+    height: 100%;
+    float:left;
+    font-size: 60px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.tw:hover
+{
+    background-color: #3095d3;
+}
+
+.inst
+{
+    width: 20%;
+    height: 100%;
+    float:left;
+    font-size: 60px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.inst:hover
+{
+    background-color: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.linke
+{
+    width: 20%;
+    height: 100%;
+    float:left;
+    font-size: 60px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.linke:hover
+{
+    background-color: #378fe9;
+}
+
+a.social-link {
+    text-decoration: none;
+    color: white;
+}
