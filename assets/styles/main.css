@@ -180,31 +180,9 @@ p{
     display: flex;
 }
 
-.fb
-{
-    width: 20%;
-    height: 100%;
-    font-size: 60px;
-    padding: 10px;
-    background-color: black;
-    color: white;
-    border: 2px solid white;
-}
-
 .fb:hover
 {
     background-color: #4668b3;
-}
-
-.yt
-{
-    width:20%;
-    height: 100%;
-    font-size: 60px;
-    padding: 10px;
-    background-color: black;
-    color: white;
-    border: 2px solid white;
 }
 
 .yt:hover
@@ -212,23 +190,12 @@ p{
     background-color: #d94348;
 }
 
-.tw
-{
-    width: 20%;
-    height: 100%;
-    font-size: 60px;
-    padding: 10px;
-    background-color: black;
-    color: white;
-    border: 2px solid white;
-}
-
 .tw:hover
 {
     background-color: #3095d3;
 }
 
-.inst
+.social_media__icon
 {
     width: 20%;
     height: 100%;
@@ -314,3 +281,10 @@ a.social-link {
     border-radius: 16px;
 }
 
+.about_me_card__description {
+    max-height: 20rem;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    margin: 0;
+}
