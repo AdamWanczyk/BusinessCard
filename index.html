@@ -25,7 +25,8 @@
 <main>
 
     <nav class="header_menu">
-        <ol>
+        <button class="menu_toggle" onclick="toggleMenu()">MENU</button>
+        <ol class="menu_items" id="menu_items">
             <li><a class="active" href="#">About me</a></li>
             <li><a href="#">Experience</a></li>
             <li><a href="#">Skills</a></li>
@@ -97,6 +98,12 @@
     </article>
 </main>
 
-
+<script type="text/javascript">
+    function toggleMenu() {
+        const menuItems = document.getElementById("menu_items");
+        const isVisible = menuItems.style.display !== "none";
+        menuItems.style.display = isVisible ? "none" : "flex";
+    }
+</script>
 </body>
 </html>
