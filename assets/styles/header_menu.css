@@ -2,14 +2,11 @@
 .header_menu {
     background-color: var(--div-background-color);
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 60vw;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 16px;
     padding: 10px 0;
     box-shadow: 10px 10px 20px var(--div_section-background-color);
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .header_menu ol {
