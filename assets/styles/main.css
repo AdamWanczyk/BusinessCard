@@ -3,6 +3,11 @@
     --div-background-color: #ffffff;
     --button-background-color: #e33bbe;
     --buttons-background-color-hover: deeppink;
+
+    --breakpoint-mobile: 576px;
+    --breakpoint-tablet: 992px;
+    --breakpoint-laptop: 1200px;
+    --breakpoint-desktop: 1400px;
 }
 
 
@@ -69,7 +74,7 @@ body {
     font-weight: bold;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
     .header_menu ol {
         flex-direction: column;
         width: 100%;
@@ -92,13 +97,13 @@ body {
     margin-right: auto;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
     .main_content {
         width: 90vw;
     }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1400px) {
     .main_content {
         width: 80vw;
     }
@@ -118,7 +123,15 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
+    display: none;
 }
+
+@media screen and (min-width: 992px) {
+    .ai {
+        display: block;
+    }
+}
+
 
 .about_me {
     background-color: var(--div-background-color);
