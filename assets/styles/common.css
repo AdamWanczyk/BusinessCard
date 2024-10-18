@@ -1,14 +1,15 @@
-
 h1 {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 100px;
-    font-size: 2em;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 100px;
+  font-size: 2em;
+  color: #333;
 }
 
 p {
-    text-align: justify;
-    padding-left: 40px;
-    padding-right: 40px;
-    text-indent: 20px;
-}S
+  text-align: justify;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-indent: 20px;
+  color: #333;
+}
