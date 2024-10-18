@@ -8,89 +8,134 @@
     <title>Businesscard</title>
     <meta name="description" content="Businesscard">
 
-    <link href="css/fontello.css" rel="stylesheet" type="text/css"/>
+    <link href="css/fontello.css" rel="stylesheet" type="text/css" />
 
+    <link rel="stylesheet" href="./assets/styles/global_variables.css">
+    <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="./assets/styles/header_menu.css">
+    <link rel="stylesheet" href="./assets/styles/ai_avatar.css">
+    <link rel="stylesheet" href="./assets/styles/about_me.css">
+    <link rel="stylesheet" href="./assets/styles/common.css">
 
 
 </head>
 
 <body>
-<main>
+    <main>
 
-    <nav class="header_menu">
-        <ol>
-            <li><a class="active" href="#">About me</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Hobby</a></li>
-            <li><a href="#">Contact</a></li>
-        </ol>
-    </nav>
+        <nav class="header_menu">
+            <button class="menu_toggle" onclick="toggleMenu()"> <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ol class="menu_items" id="menu_items">
+                <li><a class="active" href="#">About me</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Hobby</a></li>
+                <li><a href="#">Contact</a></li>
+            </ol>
+        </nav>
 
-    <article class="main_content">
-        <section class="about_me_section">
-            <div class="ai">
-                <a href="#" class="ai_button">&#129302; Porozmawiaj z moim avatarem AI</a>
-            </div>
-            <div class="about_me">
-                <div class="about_me_photo"></div>
-                <div class="about_me_card">
-                    <h1>&#128075; Hi, I'm Adam!</h1>
-                    <div class="about_me_card__description">
-                        <p>Jestem ambitnym kandydatem poszukującym pierwszej pracy jako front-end developer. Mimo braku
-                            doświadczenia zawodowego, mam silne zainteresowanie i pasję do tworzenia interaktywnych i
-                            estetycznych interfejsów użytkownika. W trakcie nauki samodzielnie zdobywałem umiejętności w
-                            zakresie HTML, CSS i JavaScript, a także eksperymentowałem z różnymi frameworkami i
-                            narzędziami front-endowymi.</p>
-                        <p>Jestem gotowy na intensywne zaangażowanie i szybkie przyswajanie wiedzy, aby rozwijać się
-                            jako profesjonalny front-end developer. Szukam okazji do pracy w inspirującym środowisku,
-                            które umożliwi mi zdobycie praktycznego doświadczenia oraz rozwój zawodowy pod okiem
-                            doświadczonych specjalistów.</p>
-                    </div>
-                    <a href="#" class="cv_button">Curriculum Vitae</a>
-                    <div class="social_media">
-                        <a class="social_media__icon fb social-link" href="http://facebook.com" target="_blank"><i
-                                class="icon-facebook"></i></a>
-                        <a class="social_media__icon yt social-link" href="http://youtube.com" target="_blank"><i
-                                class="icon-youtube"></i></a>
-                        <a class="social_media__icon tw social-link" href="http://instagram.com" target="_blank"><i
-                                class="icon-twitter"></i></a>
-                        <a class="social_media__icon inst social-link" href="http://instagram.com" target="_blank"><i
-                                class="icon-instagram"></i></a>
-                        <a class="social_media__icon linke social-link" href="http://linkedin.com" target="_blank"><i
-                                class="icon-linkedin"></i></a>
+        <article class="main_content">
+            <section class="about_me_section">
+                <div class="ai">
+                    <a href="#" class="ai_button">&#129302; Porozmawiaj z moim avatarem AI</a>
+                </div>
+                <div class="about_me">
+                    <div class="about_me_photo"></div>
+                    <div class="about_me_card">
+                        <h1>&#128075; Hi, I'm Adam!</h1>
+                        <div class="about_me_card__description">
+                            <p>Jestem ambitnym kandydatem poszukującym pierwszej pracy jako front-end developer. Mimo
+                                braku
+                                doświadczenia zawodowego, mam silne zainteresowanie i pasję do tworzenia interaktywnych
+                                i
+                                estetycznych interfejsów użytkownika. W trakcie nauki samodzielnie zdobywałem
+                                umiejętności w
+                                zakresie HTML, CSS i JavaScript, a także eksperymentowałem z różnymi frameworkami i
+                                narzędziami front-endowymi.</p>
+                            <p>Jestem gotowy na intensywne zaangażowanie i szybkie przyswajanie wiedzy, aby rozwijać się
+                                jako profesjonalny front-end developer. Szukam okazji do pracy w inspirującym
+                                środowisku,
+                                które umożliwi mi zdobycie praktycznego doświadczenia oraz rozwój zawodowy pod okiem
+                                doświadczonych specjalistów.</p>
+                        </div>
+                        <a href="#" class="cv_button" id="cvbutton">Curriculum Vitae</a>
+                        <div class="social_media">
+                            <a class="social_media__icon fb social-link" href="http://facebook.com" target="_blank"><i
+                                    class="icon-facebook"></i></a>
+                            <a class="social_media__icon yt social-link" href="http://youtube.com" target="_blank"><i
+                                    class="icon-youtube"></i></a>
+                            <a class="social_media__icon tw social-link" href="http://instagram.com" target="_blank"><i
+                                    class="icon-twitter"></i></a>
+                            <a class="social_media__icon inst social-link" href="http://instagram.com"
+                                target="_blank"><i class="icon-instagram"></i></a>
+                            <a class="social_media__icon linke social-link" href="http://linkedin.com"
+                                target="_blank"><i class="icon-linkedin"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-        </section>
+            </section>
 
-        <section class="remaining_sections">
-            <div class="box_description">experience</div>
-            <div class="box_content"></div>
-        </section>
-        <section class="remaining_sections">
-            <div class="box_description">skills</div>
-            <div class="box_content"></div>
-        </section>
-        <section class="remaining_sections">
-            <div class="box_description">projects</div>
-            <div class="box_content"></div>
-        </section>
-        <section class="remaining_sections">
-            <div class="box_description">hobby</div>
-            <div class="box_content"></div>
-        </section>
-        <section class="remaining_sections">
-            <div class="box_description">contact</div>
-            <div class="box_content"></div>
-        </section>
+            <section class="remaining_sections">
+                <div class="box_description">experience</div>
+                <div class="box_content"></div>
+            </section>
+            <section class="remaining_sections">
+                <div class="box_description">skills</div>
+                <div class="box_content"></div>
+            </section>
+            <section class="remaining_sections">
+                <div class="box_description">projects</div>
+                <div class="box_content"></div>
+            </section>
+            <section class="remaining_sections">
+                <div class="box_description">hobby</div>
+                <div class="box_content"></div>
+            </section>
+            <section class="remaining_sections">
+                <div class="box_description">contact</div>
+                <div class="box_content"></div>
+            </section>
 
-    </article>
-</main>
+        </article>
+    </main>
+
+    <script type="text/javascript">
+        const cvButton = document.getElementById("cvbutton");
+        cvButton.addEventListener("mouseenter", () => {
+            cvButton.textContent = "Download"; // Zmieniamy tekst na Download
+        });
+        cvButton.addEventListener("mouseleave", () => {
+            cvButton.textContent = "Curriculum Vitae"; // Zmieniamy tekst na CV
+        });
+        const aiDiv = document.querySelector('.ai');
+        const aiButton = document.querySelector('.ai_button');
+
+        aiButton.addEventListener('mouseover', () => {
+            aiDiv.classList.add('hover');
+        });
+
+        aiButton.addEventListener('mouseout', () => {
+            aiDiv.classList.remove('hover');
+        });
+
+        function toggleMenu() {
+            const menuItems = document.getElementById("menu_items");
+            const menuToggle = document.querySelector(".menu_toggle");
 
 
+            menuToggle.classList.toggle("open");
+            menuItems.classList.toggle("show");
+            // const isVisible = menuItems.style.display !== "none";
+            // menuItems.style.display = isVisible ? "none" : "flex";
+
+        }
+    </script>
 </body>
+
 </html>

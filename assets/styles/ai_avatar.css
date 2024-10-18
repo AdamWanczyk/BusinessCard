@@ -1,0 +1,39 @@
+.ai_button {
+  background-color: var(--button-background-color);
+  font-size: 20px;
+  color: white;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  text-decoration: none;
+}
+
+.ai_button:hover {
+  background-color: var(--buttons-background-color-hover);
+}
+
+.ai {
+  background-color: var(--div_section-background-color);
+  width: 90%;
+  height: 80%;
+  border-radius: 16px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: none;
+  z-index: 1;
+}
+
+.ai.hover {
+  z-index: 2;
+}
+@media screen and (min-width: 992px) {
+  .ai {
+    display: block;
+  }
+}

@@ -1,0 +1,11 @@
+:root {
+    --div_section-background-color: #9396D4;
+    --div-background-color: #ffffff;
+    --button-background-color: #e33bbe;
+    --buttons-background-color-hover: deeppink;
+
+    --breakpoint-mobile: 576px;
+    --breakpoint-tablet: 992px;
+    --breakpoint-laptop: 1200px;
+    --breakpoint-desktop: 1400px;
+}
